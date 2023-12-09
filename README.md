@@ -92,3 +92,32 @@ ou execute o comando equivalente abaixo:
     $ sudo docker container ps -a
 ```
 
+O que aconteceu no comando anterior? Quantos containers foram listados? Quantas imagens foram listadas?
+
+A partir do comando acima fica claro uma mesma imagem pode ser utilizada para rodar vários containers.
+
+Cada container terá um nome único e aleatório e será criado a partir de uma imagem. 
+ 
+Agora informe o seguinte comando para listas as imagens disponíveis no sitema:
+
+```
+    $ sudo docker image ls 
+```
+
+Após, vamos executar o seguinte comando abaixo:
+
+```
+    $ sudo docker container run ubuntu 
+```
+
+O que o comando acima produziu? O que acontece se ele for executado novamente?
+
+Agora modifique o comando anterior para o seguinte formato:
+
+```
+    $ sudo docker container run -it ubuntu
+```
+
+Embora tenhamos executado uma imagem **ubuntu** em um container, esta imagem não 
+é uma Máquina Virtual. A imagem possui apenas o Shell do Sistema Operacional, e não
+possui Kernel. A imagem "acha" que possui o Kernel, mas este Kernel é o da Máquina Física.
