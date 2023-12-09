@@ -24,7 +24,7 @@ A abordagem recomendada de instalação do Docker Desktop em sistemas Linux Debi
 1. Instalar o repositório do Docker no sistemas APT do Debian
 
 Podemos recuperar o cabeçalho deste arquivo fazendo:
-
+```
     # Adicionar a chave do Repositório
 
     $ sudo apt update
@@ -41,14 +41,14 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
   	sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 
     $ sudo apt update
-
-2. PPodemos recuperar o cabeçalho deste arquivo fazendo:
+```
+2. Para instalar a última versão do Docker use o seguinte comando:
 ```
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 3. Para verificar se a instalação ocorreu com sucesso rode o seguinte comando a seguir:
-
+```
     $ sudo docker run hello-world
-
+```
 
