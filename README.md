@@ -161,6 +161,40 @@ deve ser substituído pela porta do container, conforme o exemplo abaixo:
 
 No exemplo a seguir, a porta 80/TCP do container foi mapeada para a porta 8080/TCP do Sistema Operacional,
 sendo, portanto, agora acessível por um navegador (Firefox, Chrome, etc.). Basta acessar o endereço abaixo:
+
+```
+    http://localhost:8080/
+```
+
+O container nginx já está rodando no Docker. A seguir, vamos executar um comando para acessar o conteúdo deste
+container que está em execução. Para isso, usaremos o comando **exec**, conforme:
+
+```
+    $ sudo docker container exec -it <nome_do_container> bash
+```
+
+onde o termo **<nome_do_container>** deve ser substituído pelo nome do container (consultar com o comando **ps**).
+A partir do exposto, segue um exemplo para o container **quizzical_feistel** (consultar o nome do container que está 
+rodando em sua máquina. Lembre que este nome é aleatório).
+
+```
+    $ sudo docker container exec -it quizzical_feistel bash
+```
+
+Com a execução do comando anterior, vefique que agora estamos em outro ambiente, no caso, dentro do container:
+
+![Imagem2](/imagens/imagem2.png)
+
+Embora pareça que estejamos interagindo com uma Máquina Virtual Linux, na verdade estamos executando um container.
+
+Execute o seguinte comando para a alterar a página inicial do container **nginx** que está em execução:
+
+```
+    $ echo "Olá Mundo" > /usr/share/nginx/html/index.html
+```
+
+A partir do comando acima, acessar o endereço a partir do navegador do Sistema Operacional:
+
 ```
     http://localhost:8080/
 ```
