@@ -121,3 +121,19 @@ Agora modifique o comando anterior para o seguinte formato:
 Embora tenhamos executado uma imagem **ubuntu** em um container, esta imagem não 
 é uma Máquina Virtual. A imagem possui apenas o Shell do Sistema Operacional, e não
 possui Kernel. A imagem "acha" que possui o Kernel, mas este Kernel é o da Máquina Física.
+
+Agora vamos fazer um novo teste com a imagem nginx que é uma aplicação de servidor web.
+
+Execute o seguinte comando:
+
+```
+    $ sudo docker container run nginx
+```
+
+O que aconteceu? A imagem **nginx** foi utilizada para iniciar um novo container. É possível 
+abrir uma nova aba no Terminal e executar o comando de listagem de containers. Neste caso é 
+possível ver que há pelo menos uma imagem sendo utilizada por um container.
+
+```
+    $ sudo docker container ps -a
+```
