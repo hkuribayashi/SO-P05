@@ -52,3 +52,10 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
     $ sudo docker run hello-world
 ```
 
+4. Caso o comando anterior tenha falhado, verifique se a instalação do Docker Engine ocorreu com sucesso:
+```
+    $ sudo service docker start
+```
+
+# Principais Comandos
+
