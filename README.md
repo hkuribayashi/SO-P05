@@ -24,6 +24,7 @@ A abordagem recomendada de instalação do Docker Desktop em sistemas Linux Debi
 1. Instalar o repositório do Docker no sistemas APT do Debian
 
 Podemos recuperar o cabeçalho deste arquivo fazendo:
+
 ```
     # Adicionar a chave do Repositório
 
@@ -43,16 +44,19 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
     $ sudo apt update
 ```
 2. Para instalar a última versão do Docker use o seguinte comando:
+
 ```
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 3. Para verificar se a instalação ocorreu com sucesso rode o seguinte comando a seguir:
+
 ```
     $ sudo docker run hello-world
 ```
 
 4. Caso o comando anterior tenha falhado, verifique se a instalação do Docker Engine ocorreu com sucesso:
+
 ```
     $ sudo service docker start
 ```
@@ -61,15 +65,30 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
 
 Inicialmente vamos reconhecer o terrreno e entender nossos primeiros comandos. Começaremos com o comando 
 docker run e entender seu funcionamento.
+
 ```
     $ sudo docker run hello-world
 ```
 No comando acima, a instrução run serve para indicar que desejamos rodar uma imagem docker, neste caso a 
 imagem **hello-world**, que é uma imagem que serve apenas para testar a instalação do Docker, como um Hello World.
 Assim, este comando possui a seguinte estrutura:
+
 ```
     $ sudo docker run <imagem_docker>
 ```
+
 Onde **<imagem_docker>** representa uma imagem docker que frequentemente não está disponível em seu Sistema Operacional,
 e assim, o Docker Daemon realiza o download da imagem a partir de algum repositório Docker.
+
+Após o comando anterior, execute o comando a seguir:
+
+```
+    $ sudo docker container ps
+```
+
+ou o comando abaixo:
+
+```
+    $ sudo docker container ps -a
+```
 
