@@ -57,5 +57,19 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
     $ sudo service docker start
 ```
 
-# Principais Comandos
+## Reconhecendo o Terreno
+
+Inicialmente vamos reconhecer o terrreno e entender nossos primeiros comandos. Começaremos com o comando 
+docker run e entender seu funcionamento.
+```
+    $ sudo docker run hello-world
+```
+No comando acima, a instrução run serve para indicar que desejamos rodar uma imagem docker, neste caso a 
+imagem hello-world, que é uma imagem que serve apenas para testar a instalação do Docker, como um Hello World.
+Assim, este comando possui a seguinte estrutura:
+```
+    $ sudo docker run <imagem_docker>
+```
+Onde <imagem_docker> representa uma imagem docker que frequentemente não está disponível em seu Sistema Operacional,
+e assim, o Docker Daemon realiza o download da imagem a partir de algum repositório Docker.
 
