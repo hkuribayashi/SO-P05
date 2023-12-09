@@ -43,9 +43,9 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
     $ sudo apt update
 
 2. PPodemos recuperar o cabeçalho deste arquivo fazendo:
-
+```
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
+```
 
 3. Para verificar se a instalação ocorreu com sucesso rode o seguinte comando a seguir:
 
