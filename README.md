@@ -65,7 +65,7 @@ docker run e entender seu funcionamento.
     $ sudo docker run hello-world
 ```
 No comando acima, a instrução run serve para indicar que desejamos rodar uma imagem docker, neste caso a 
-imagem hello-world, que é uma imagem que serve apenas para testar a instalação do Docker, como um Hello World.
+imagem **hello-world**, que é uma imagem que serve apenas para testar a instalação do Docker, como um Hello World.
 Assim, este comando possui a seguinte estrutura:
 ```
     $ sudo docker run <imagem_docker>
