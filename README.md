@@ -137,3 +137,9 @@ possível ver que há pelo menos uma imagem sendo utilizada por um container.
 ```
     $ sudo docker container ps -a
 ```
+
+A imagem que está rodando em um container pode usar uma porta de comunicação para o estabelecimento
+de conexões TCP/IP. Neste caso, o container que está em execução, está com a porta 80/TCP em uso, e
+assim pode ser acessada por outros computadores:
+
+![Imagem1](/imagens/imagem1.png)
