@@ -143,3 +143,24 @@ de conexões TCP/IP. Neste caso, o container que está em execução, está com 
 assim pode ser acessada por outros computadores:
 
 ![Imagem1](/imagens/imagem1.png)
+
+Conforme pode ser observado na imagem acima, o container usa uma porta, mas esta porta de comunicação
+é diferente da porta de comunicação usada pelo Sistema Operacional físico. É possível criar um mapeamento
+entre a porta utilizada pelo SO e a porta utilizada pelo container da seguinte forma:
+
+```
+    $ sudo docker container run -p <porta_do_so>:<porta_do_container> nginx
+```
+
+onde, **<porta_do_so> deve ser substituído pela numeração de porta utilizada no SO, e o termo <porta_do_container>
+deve ser substituído pela porta do container, conforme o exemplo abaixo:
+
+```
+    $ sudo docker container run -p 8080:80 nginx
+```
+
+No exemplo a seguir, a porta 80/TCP do container foi mapeada para a porta 8080/TCP do Sistema Operacional,
+sendo, portanto, agora acessível por um navegador (Firefox, Chrome, etc.). Basta acessar o endereço abaixo:
+```
+    http://localhost:8080/
+```
