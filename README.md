@@ -86,7 +86,7 @@ Após o comando anterior, execute o comando a seguir:
     $ sudo docker container ps
 ```
 
-ou o comando abaixo:
+ou execute o comando equivalente abaixo:
 
 ```
     $ sudo docker container ps -a
