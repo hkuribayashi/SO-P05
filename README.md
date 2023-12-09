@@ -70,6 +70,6 @@ Assim, este comando possui a seguinte estrutura:
 ```
     $ sudo docker run <imagem_docker>
 ```
-Onde <imagem_docker> representa uma imagem docker que frequentemente não está disponível em seu Sistema Operacional,
+Onde **<imagem_docker>** representa uma imagem docker que frequentemente não está disponível em seu Sistema Operacional,
 e assim, o Docker Daemon realiza o download da imagem a partir de algum repositório Docker.
 
