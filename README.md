@@ -42,7 +42,7 @@ Podemos recuperar o cabeçalho deste arquivo fazendo:
 
     $ sudo apt update
 
-2. Para instalar a última versão do Docker:
+2. PPodemos recuperar o cabeçalho deste arquivo fazendo:
 
     $ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
