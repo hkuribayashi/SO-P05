@@ -198,3 +198,29 @@ A partir do comando acima, acessar o endereço a partir do navegador do Sistema 
 ```
     http://localhost:8080/
 ```
+
+## Fazendo o Build de uma nova imagem
+
+Para realizar o **build** de um nova imagem vamos entrar no diretório **exemplo01**, conforme:
+
+```
+    $ cd exemplo01
+```
+
+Após, vamos examinar o conteúdo do arquivo **Dockerfile**, a partir do comando **cat**. Este comando
+é utilizado para exibir o conteúdo de um arquivo de texto. Desta forma, utilizaremos ele da seguinte
+forma:
+
+```
+    $ cat Dockerfile
+```
+
+Conteúdo do arquivo **Dockerfile**:
+
+![Imagem3](/imagens/imagem3.png)
+
+No arquivo **Dockerfile** há alguns comandos utilizados, conforme:
+
+1. FROM: Usado para informar qual a imagem base que se deseja baixar do repositório central Docker
+
+2. 
