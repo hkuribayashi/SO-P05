@@ -223,4 +223,39 @@ No arquivo **Dockerfile** há alguns comandos utilizados, conforme:
 
 1. FROM: Usado para informar qual a imagem base que se deseja baixar do repositório central Docker
 
-2. 
+2. WORKDIR: Usado para informar/setar um diretório de trabalho. É desta pasta que a aplicação será executada.
+
+3. COPY: Utilizado para copiar arquivos/diretórios para dentro do sistema de arquivos do container.
+
+4. RUN: Usado para executar um comando em específico dentro do container durante o build da imagem.
+
+5. CMD: Utilizado para executar um comando quando o container for executado.
+
+Após verificarmos o conteúdo do arquivo vamos fazer o build da imagem, conforme:
+
+```
+    $ docker build -t <escolher_nome_da_imagem> .
+```
+
+Onde o termo **<escolher_nome_da_imagem>** deve ser substituído por um nome de nossa escolha que defina o nome da imagem que está sendo criada. Assim este nome deve ser único. Não é possível ter duas imagens com o mesmo nome. Neste caso vamos adotar o nome **exemplo01**, conforme:
+
+```
+    $ docker build -t exemplo01 .
+```
+
+![Imagem4](/imagens/imagem4.png)
+
+Após o build da imagem é possível verificar a sua criação com o seguinte comando:
+
+```
+    $ docker image ls
+```
+
+Em seguida, é possível criar/executar um container a partir da imagem gerada:
+
+```
+    $ docker container run -p 8080:5000 python-exemplo01
+```
+
+
+
